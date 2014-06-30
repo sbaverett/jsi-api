@@ -2,8 +2,7 @@
 
 {{#each}}
   {{id}}
-  {{name}}
+  {{#link-to 'boss' id}}{{name}}{{/link-to}}
   {{role}}
-  {{links}}
   <br>
 {{/each}}
