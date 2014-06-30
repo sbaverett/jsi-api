@@ -1,5 +1,8 @@
-App.Employee = DS.Model.extend({
-  name: DS.attr('string'),
-  role: DS.attr('string'),
-  links: DS.attr('object')
-});
+'use strict';
+
+module.exports = function(App) {
+	App.Employee = DS.Model.extend({
+  	name: DS.attr(),
+  	role: DS.attr()
+	});
+};
