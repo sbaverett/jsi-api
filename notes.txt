@@ -1,0 +1,22 @@
+Starting from jsi-api repo clone:
+
+//create a database
+$ postgres=# create database "jsi-ember-data-project";
+
+//quit
+$ \q
+
+//run migration
+$ ./node_modules/.bin/knex migrate:latest
+
+
+//go to database
+$ psql -d jsi-ember-data-project
+
+// Add data:
+
+jsi-ember-data-project=# insert into employees (name, role, boss_id) values ('Susan', 'CEO', null);
+
+jsi-ember-data-project=# insert into employees (name, role, boss_id) values ('John', 'CTO', 1);
+
+etc., etc.
